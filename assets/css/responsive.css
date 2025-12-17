@@ -1,0 +1,212 @@
+@media (max-width:1500px){
+
+    .layout{
+       min-width: auto;
+       width: 85%;
+       margin-left: 10rem;
+    }
+
+}
+@media (max-width:1400px){
+
+    .layout{
+       min-width: auto;
+       width: 84%;
+       
+    }
+
+}
+
+
+/*aca tengo que cambiar la fuente del aside que se acopla un poco*/
+/*VERIFICAR LOS CERTIFICADOS PARA QUE QUEPAN 2 DESDE 1280PX HASTA..850PX APROXIMADAMENTE*/
+@media (max-width:1280px){
+
+ .layout{
+       min-width: auto;
+       width: 87%;
+       margin-left: 3rem;
+    }
+
+    /*ASIDE*/
+    .user-info__name{
+        font-size: 2.9rem;
+    }
+    .user-info__job{
+        font-size: 1.6rem;
+    }
+
+    /*CURRICULUM*/
+    .certificates__certificate{
+        width: auto;
+    }
+
+    
+}
+
+@media (max-width:1150px){
+    .user-info__name{
+        font-size: 2.6rem;
+    }
+    .user-info__job{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Aca ya se empieza a deformar el aside, a partir de aca ya deberia volverse todo una linea*/
+@media (max-width:1100px){
+
+    body{
+        background-image: none;
+        position: static;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    /*Para ocultar una parte de la pagina solo displayear una parte del grid y listo xdd*/
+    .layout{
+        width: 100%;
+        min-height: 100%;
+        margin-left: 0;
+        
+        grid-template-areas: 
+        'content';
+        grid-template-columns: 100%;
+        border-radius: 0;
+    }
+
+
+    .layout__content{
+        grid-area: content;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border: 0;
+
+    }
+    .layout__aside{
+        display: none;
+    }
+
+    /*CONTACTO*/
+    .contact__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__info{
+        width: 100%; 
+        padding: 0 1.5rem;
+    }
+     .contact__data{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        color: var(--color-background-contact);
+        border: 1px solid var(--color-border-reviews);
+    }
+    /*CURRICULUM*/
+    .resume__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificates__container{
+        width: 100%;
+    }
+    .certificates__certificate{
+        float: left;
+        flex-basis: calc(100% - 1.5rem);
+        align-items: center;
+    }
+
+ .certificates__tittle{
+    font-size: 2.2rem;
+    }
+    .certificates__date{
+    font-size: 1.5rem;
+    }
+    .certificates__info{
+        display: block;
+        justify-content: center;
+    }
+
+
+    /*SOBRE MI */
+    .about__services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal-info__description{
+        margin-bottom: 2rem;
+    }
+    
+    .about__personal-info{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .services__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services__service{
+        width: 100%;
+    }
+
+    .reviews__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+}
+
+@media (max-width:1000px){
+    .layout{
+     
+    
+      
+    }
+
+}
+
+@media (max-width:940px){
+
+    .portfolio__gallery{
+        flex-direction: column;
+        
+    }
+    img, video, iframe, picture, figure {
+    max-width: 80%;
+    display: block;
+    }
+
+
+}
+
+@media (max-width:800px){
+    .layout{
+     
+      
+    }
+
+}
+
+@media (max-width:585px){
+    .layout{
+     
+      
+    }
+
+}
+
+@media (max-width:480px){
+    .layout{
+     
+      
+    }
+
+}
