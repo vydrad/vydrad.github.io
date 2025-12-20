@@ -1,5 +1,11 @@
-@media (max-width:1500px){
+@media (max-width:1600px){
+    .layout__menu-toggle{
+        display: none;
+    }
+}
 
+@media (max-width:1500px){
+  
     .layout{
        min-width: auto;
        width: 85%;
@@ -68,6 +74,38 @@
 
 /* Aca ya se empieza a deformar el aside, a partir de aca ya deberia volverse todo una linea*/
 @media (max-width:1100px){
+    .layout__menu-toggle{
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        line-height: 5.1rem;
+        text-align: center;
+        background-color: var(--color-secondary);
+        font-size: 2.2rem;
+        color:var(--color-primary);
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+        z-index: 9 ;
+    }
+
+    .fa-xmark{
+        opacity: 0;
+    }
+    .far-bars{
+        opacity: 1;
+    }
+    .menu-toggle__icon{
+        color:var(--color-primary)  ;
+        display: block;
+        position: absolute;
+        top: 29%;
+        left:33%;
+    }
+  
 
     body{
         background-image: none;
@@ -88,109 +126,111 @@
       border-radius: 0;
     }
 
-   
-
     .layout__content{
         grid-area: content;
         flex-direction: column;
         align-items: center;
         background-color: transparent;
-      
         border-radius: none;
     }
     .layout__aside{
+        z-index: 1;
+        display:block;
+        position: absolute;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        overflow: auto;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .layout__aside--visible{
+        width: 0%;
+        margin-right: 0;
+        opacity: 1;
+    }
+    .layout__aside--hidden{
+        margin-right: -100%;
+        opacity: 0;
+    }
+
+    .layout__menu{
+        position: relative;
+        top:2rem;
+        padding-bottom: 3rem;
+    }
+    .user-info__container-image{
+        width: 13rem;
+        margin-top: 0;
+        display: inline-block;
+        margin-top: 3rem;
+       
+    }
+    .user-info__name{
+        font-size: 2.5rem;
+    }
+    .user-info__job{
+        font-size: 1.4rem;
+    }
+    .aside__user-info{
+        padding: 0 1rem;
+    }
+    .menu__list{
+        position:static;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: none;
+        margin-left: 0;
+        padding: 0;
+        min-height: auto;
+    }
+    .menu__link{
+        display: block;
+        padding: 1.2rem 0;
+    }
+    .menu__icon{
         display: none;
     }
 
-    /*CONTACTO*/
-    /*
-    .contact__container{
-        flex-direction: column;
-        align-items: center;
+
+    .menu__overlay{
+        position:static;
+        opacity: 0.75;
+        margin-top: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
     }
-    .contact__info{
-        width: 100%; 
-        padding: 0 1.5rem;
+    .menu__link--active .menu__overlay{
+        opacity: 1;
+        font-weight: bold;
     }
-     .contact__data{
-        width: 100%;
-        margin-bottom: 1.5rem;
-        padding: 2rem 1rem;
-        text-align: center;
-        color: var(--color-background-contact);
-        border: 1px solid var(--color-border-reviews);
+    .user-links__social{
+        margin-top: 0;
+        margin-left: 1rem;
     }
-        */
-    /*CURRICULUM*/
-    /*
-    .resume__container{
-        flex-direction: column;
-        align-items: center;
+    .user-info__user-links{
+        margin-bottom: 0;
     }
-    .certificates__container{
-        width: 100%;
-    }
-    .certificates__certificate{
-        float: left;
-        flex-basis: calc(100% - 1.5rem);
-        align-items: center;
+    .user-info__footer{
+        position: relative;
+        bottom: 1.5rem;
     }
 
- .certificates__tittle{
-    font-size: 2.2rem;
-    }
-    .certificates__date{
-    font-size: 1.5rem;
-    }
-    .certificates__info{
-        display: block;
-        justify-content: center;
-    }
-*/
-
-    /*SOBRE MI */
-    /*
-    .about__services{
-        flex-direction: column;
-        align-items: center;
-    }
-    .personal-info__description{
-        margin-bottom: 2rem;
-    }
-    
-    .about__personal-info{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-
-    .services__container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .services__service{
-        width: 100%;
-    }
-
-    .reviews__container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-   */
 }
 
 
 
 @media (max-width:940px){
 
-
     img, video, iframe, picture, figure {
-    max-width: 80%;
+
     display: block;
     }
-
-
 }
 
 @media (max-width:800px){
