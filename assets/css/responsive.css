@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width:1400px){
+@media (max-width:1400px){w
 
     .layout{
        min-width: auto;
@@ -31,9 +31,9 @@
        margin-left: -7rem;
     }
 
-
     /*ASIDE*/
     .user-info__name{
+       
         font-size: 2.9rem;
     }
     .user-info__job{
@@ -103,6 +103,98 @@
     }
 
     /*CONTACTO*/
+    /*
+    .contact__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__info{
+        width: 100%; 
+        padding: 0 1.5rem;
+    }
+     .contact__data{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        color: var(--color-background-contact);
+        border: 1px solid var(--color-border-reviews);
+    }
+        */
+    /*CURRICULUM*/
+    /*
+    .resume__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificates__container{
+        width: 100%;
+    }
+    .certificates__certificate{
+        float: left;
+        flex-basis: calc(100% - 1.5rem);
+        align-items: center;
+    }
+
+ .certificates__tittle{
+    font-size: 2.2rem;
+    }
+    .certificates__date{
+    font-size: 1.5rem;
+    }
+    .certificates__info{
+        display: block;
+        justify-content: center;
+    }
+*/
+
+    /*SOBRE MI */
+    /*
+    .about__services{
+        flex-direction: column;
+        align-items: center;
+    }
+    .personal-info__description{
+        margin-bottom: 2rem;
+    }
+    
+    .about__personal-info{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .services__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services__service{
+        width: 100%;
+    }
+
+    .reviews__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+   */
+}
+
+
+
+@media (max-width:940px){
+
+
+    img, video, iframe, picture, figure {
+    max-width: 80%;
+    display: block;
+    }
+
+
+}
+
+@media (max-width:800px){
+    /*CONTACTO*/
     .contact__container{
         flex-direction: column;
         align-items: center;
@@ -133,17 +225,18 @@
         align-items: center;
     }
 
- .certificates__tittle{
+    .certificates__tittle{
     font-size: 2.2rem;
     }
+    
     .certificates__date{
     font-size: 1.5rem;
     }
+
     .certificates__info{
         display: block;
         justify-content: center;
     }
-
 
     /*SOBRE MI */
     .about__services{
@@ -173,46 +266,39 @@
         align-items: center;
     }
 
-   
-}
-
-@media (max-width:1000px){
-    .layout{
-     
-    
-      
-    }
-
-}
-
-@media (max-width:940px){
-
-    .portfolio__gallery{
+    .reviews__container{
         flex-direction: column;
-        
     }
-    img, video, iframe, picture, figure {
-    max-width: 80%;
-    display: block;
+    .reviews__review{
+        margin-top: 5rem;
+        flex-basis: 100%;
     }
 
+    /*Portafolio*/
+    .gallery__item{
+    flex-basis: 50%;
+    }
 
-}
-
-@media (max-width:800px){
-    .layout{
-     
-      
+    .articles__article{
+        flex-basis: 100%;
+        padding: 0 1.5rem;
+        padding-bottom:3.5rem;
     }
 
 }
 
 @media (max-width:585px){
-    .layout{
-     
+  
       
+    
+    .portfolio__gallery{
+        flex-direction: column;
     }
 
+    .page__name{
+    text-align: center; }
+    .page__job{
+    font-size: 3rem;}
 }
 
 @media (max-width:480px){
